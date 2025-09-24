@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <!-- taillwind -->
+         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+         <!-- dasiy -->
+          <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+          <!-- font asowm -->
+           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body class="bg-[#f4f5f7] h-[100vh]">
+
+    <!-- navber -->
+    <section class=" flex justify-between items-center max-w-lg mx-auto h-[50px]  border-b-1 border-gray-400 p-4">
+        <div class="flex items-center gap-4">
+            <img class="h-[40px]" src="assets/Group.png" alt="">
+            <div>
+                <h1 class="font-bold">$ <span id="available">4000</span></h1>
+                <p class="text-[#08080880]">Available Balance</p>
+                
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-active "> <i class="fa-solid fa-right-from-bracket rotate-180"></i>Log Out</button>
+        </div>
+        
+    </section>
+    
+
+
+    <!-- wellcome -->
+     <div class="max-w-lg mx-auto mt-10 p-3">
+        <h1 class="font-bold text-[24px]">🔥 Welcome to Payooo!</h1>
+        <p class="font-400 text-[16px] text-[#08080880]">Enjoy easy and convenient financial services with us. <br> Cashout charge is low and </p>
+     </div>
+
+     <!-- card-6 -->
+     <section class="max-w-lg mx-auto mt-10  grid grid-cols-3 gap-2 p-3">
+        <div id="btn1" class="text-center items-center p-4 border-2 border-[#0808081a] bg-[#ffffff] rounded-lg">
+            <img class="mx-auto" src="assets/wallet1.png" alt="">
+            <h1 class="text-[#080808b3]">Add Money</h1>
+        </div>
+        <div id="btn2" class="rounded-lg text-center items-center p-4 border-2 border-[#0808081a] bg-[#ffffff]">
+            <img class="mx-auto" src="assets/send1.png" alt="">
+            <h1 class="text-[#080808b3]">CashOut</h1>
+        </div>
+        <div id="btn3" class="rounded-lg text-center items-center p-4 border-2 border-[#0808081a] bg-[#ffffff]">
+            <img class="mx-auto" src="assets/money1.png" alt="">
+            <h1 class="text-[#080808b3]">Transfer Money</h1>
+        </div>
+        <div id="btn4" class="rounded-lg text-center items-center p-4 border-2 border-[#0808081a] bg-[#ffffffff]">
+            <img class="mx-auto" src="assets/bonus1.png" alt="">
+            <h1 class="text-[#080808b3]">Get Bonus</h1>
+        </div>
+        <div class="rounded-lg text-center items-center p-4 border-2 border-[#0808081a] bg-[#ffffff]">
+            <img class="mx-auto" src="assets/purse1.png" alt="">
+            <h1 class="text-[#080808b3]">Pay Bill</h1>
+        </div>
+        <div class="rounded-lg text-center items-center p-4 border-2 border-[#0808081a] bg-[#ffffff]">
+            <img class="mx-auto" src="assets/transaction1.png" alt="">
+            <h1 class="text-[#080808b3]">Transactions</h1>
+        </div>
+     </section>
+
+     <!-- form ---------------------------->
+
+     <!-- add money -->
+     <section style="display: none;"  class="form"  id="addmaney" class="bg-[#f4f5f7] h-[100vh]">
+        <section class="max-w-lg mx-auto  p-3 ">
+        <div>
+            <h1 class="font-bold">Add Money</h1>
+        </div>
+        <form class="p-9 bg-[#ffffff] mt-5 ">
+            <div>
+                <h1 class="font-bold text-[16px] text-[#080808b3] ">Select A Bank</h1>
+                <fieldset class="fieldset">
+                    <fieldset class="fieldset">
+  
+  <select id="bank" class="select select-sm">
+  <option disabled selected>SELECT</option>
+  <option >IFIC BANK</option>
+  <option>ISLAMI BANK</option>
+  <option>RAKUB</option>
+  <option>AGRANI BANK</option>
+</select>
+  
+</fieldset>
+  
+            </div>
+            <div>
+                <h1 class="font-bold text-[16px] text-[#080808b3] ">Bank Account Number</h1>
+                <input id="accountnumber" class="w-[320px] mt-1 rounded-lg" placeholder="your number"  type="text" name="" id="">
+            </div>
+
+            <div>
+                <h1 class="mt-2 font-bold text-[16px] text-[#080808b3] ">Amount to Add</h1>
+                <input id="amount" class="w-[320px] mt-1 rounded-lg" placeholder="Add Amount"  type="text" name="" id="">
+            </div>
+
+            <div>
+                <h1 class=" mt-2 font-bold text-[16px] text-[#080808b3]">Pin Number</h1>
+                <input  class="w-[320px] rounded-lg" placeholder=" pin number"  type="text" name="" id="pinnumber">
+            </div>
+            <button id="btn" class="btn btn-primary w-[320px] mt-5 rounded-2xl">Add Money</button>
+
+        </form>
+     </section>
+     </section>
+
+
+     <!-- cashout -->
+      <section style="display: none;" class="form" id="cashout" class=" bg-[#f4f5f7] h-[100vh]">
+        <section class="max-w-lg mx-auto  p-3 ">
+        <div>
+            <h1 class="font-bold">CashOut</h1>
+        </div>
+        <form class="p-9 bg-[#ffffff] mt-5 ">
+            
+            <div>
+                <h1 class="font-bold text-[16px] text-[#080808b3] ">Agent Number</h1>
+                <input id="agentnumber" class="w-[320px] mt-1 rounded-lg" placeholder="Your Agent Number"  type="text" name="" id="">
+            </div>
+
+            <div>
+                <h1 class="mt-2 font-bold text-[16px] text-[#080808b3] ">Amount</h1>
+                <input id="withdrawamount" class="w-[320px] mt-1 rounded-lg" placeholder=" Amount"  type="text" name="" id="">
+            </div>
+
+            <div>
+                <h1 class=" mt-2 font-bold text-[16px] text-[#080808b3]">Pin Number</h1>
+                <input  class="w-[320px] rounded-lg" placeholder=" pin number"  type="text" name="" id="withdrawpin">
+            </div>
+            <button id="c-btn" class="btn btn-primary w-[320px] mt-5 rounded-2xl">Withdraw Money</button>
+
+        </form>
+     </section>
+     </section>
+
+
+     <!-- transfer money -->
+      <section style="display: none;" class="form" id="transfer" class="bg-[#f4f5f7] h-[100vh]">
+        <section class="max-w-lg mx-auto  p-3 ">
+        <div>
+            <h1 class="font-bold">Transfer Money</h1>
+        </div>
+        <form class="p-9 bg-[#ffffff] mt-5 ">
+            
+            <div>
+                <h1 class="font-bold text-[16px] text-[#080808b3] ">User Acount Number</h1>
+                <input  class="w-[320px] mt-1 rounded-lg" placeholder="User Acount Number"  type="text" name="" id="">
+            </div>
+
+            <div>
+                <h1 class="mt-2 font-bold text-[16px] text-[#080808b3] ">Amount</h1>
+                <input  class="w-[320px] mt-1 rounded-lg" placeholder=" Amount"  type="text" name="" id="">
+            </div>
+
+            <div>
+                <h1 class=" mt-2 font-bold text-[16px] text-[#080808b3]">Pin Number</h1>
+                <input  class="w-[320px] rounded-lg" placeholder=" pin number"  type="text" name="" id="">
+            </div>
+            <button  class="btn btn-primary w-[320px] mt-5 rounded-2xl">Send Now</button>
+
+        </form>
+     </section>
+     </section>
+
+     <!-- get bonus -->
+       <section style="display: none;" class="form" id="get"  class="bg-[#f4f5f7] h-[100vh]">
+        <section class="max-w-lg mx-auto  p-3 ">
+        <div>
+            <h1 class="font-bold">Get Bonus</h1>
+        </div>
+        <form class="p-9 bg-[#ffffff] mt-5 ">
+            
+            <div>
+                <h1 class="font-bold text-[16px] text-[#080808b3] ">Enter Get Bonus Cupon</h1>
+                <input  class="w-[320px] mt-1 rounded-lg" placeholder="Enter Your Cupon"  type="text" name="" id="">
+            </div>
+
+            <button  class="btn btn-primary w-[320px] mt-5 rounded-2xl">Send Now</button>
+
+        </form>
+     </section>
+     </section>
+
+
+
+     <!-- pay bill -->
+      
+      
+
+     <script src="home.js"></script>
+    
+</body>
+</html>

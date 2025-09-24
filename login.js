@@ -13,7 +13,7 @@ document.getElementById('btn').addEventListener('click',function(event){
     const pin=parseInt(pinnumber);
     
     if(usernumber===mobile &&userpinnumber===pin){
-        window.location.href='./home.html'
+        window.location.href='./index.html'
     }
     else{
         alert('invalid number or pin number')

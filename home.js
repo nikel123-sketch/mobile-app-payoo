@@ -86,6 +86,26 @@ document.getElementById('btn4').addEventListener('click',function(){
 
 })
 
+// pay bill--------
+document.getElementById('btn5').addEventListener('click',function(){
+    const forms=document.getElementsByClassName('form');
+    for(const form of forms){
+        form.style.display='none'
+    }
+    document.getElementById('paybill').style.display='block'
+})
+
+
+// transaction-----
+document.getElementById('btn6').addEventListener('click',function(){
+    const forms=document.getElementsByClassName('form');
+    for(const form of forms ){
+        form.style.display='none'
+        document.getElementById('transaction').style.display='block'
+    }
+})
+
+
 
 
 // cashout js------

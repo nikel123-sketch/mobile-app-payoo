@@ -58,11 +58,11 @@
             <img class="mx-auto" src="assets/bonus1.png" alt="">
             <h1 class="text-[#080808b3]">Get Bonus</h1>
         </div>
-        <div class="rounded-lg text-center items-center p-4 border-2 border-[#0808081a] bg-[#ffffff]">
+        <div id="btn5" class="rounded-lg text-center items-center p-4 border-2 border-[#0808081a] bg-[#ffffff]">
             <img class="mx-auto" src="assets/purse1.png" alt="">
             <h1 class="text-[#080808b3]">Pay Bill</h1>
         </div>
-        <div class="rounded-lg text-center items-center p-4 border-2 border-[#0808081a] bg-[#ffffff]">
+        <div id="btn6" class="rounded-lg text-center items-center p-4 border-2 border-[#0808081a] bg-[#ffffff]">
             <img class="mx-auto" src="assets/transaction1.png" alt="">
             <h1 class="text-[#080808b3]">Transactions</h1>
         </div>
@@ -71,10 +71,10 @@
      <!-- form ---------------------------->
 
      <!-- add money -->
-     <section style="display: none;"  class="form"  id="addmaney" class="bg-[#f4f5f7] h-[100vh]">
-        <section class="max-w-lg mx-auto  p-3 ">
+     <section style="display: none;"  class="form bg-[#f4f5f7] h-[100vh]"  id="addmaney" class=" ">
+        <section class="max-w-lg mx-auto  p-3  ">
         <div>
-            <h1 class="font-bold">Add Money</h1>
+            <h1 class="font-bold mt-[22px]">Add Money</h1>
         </div>
         <form class="p-9 bg-[#ffffff] mt-5 ">
             <div>
@@ -115,7 +115,7 @@
 
 
      <!-- cashout -->
-      <section style="display: none;" class="form" id="cashout" class=" bg-[#f4f5f7] h-[100vh]">
+      <section style="display: none;" class="form bg-[#f4f5f7] h-[100vh]" id="cashout" class=" ">
         <section class="max-w-lg mx-auto  p-3 ">
         <div>
             <h1 class="font-bold">CashOut</h1>
@@ -144,7 +144,7 @@
 
 
      <!-- transfer money -->
-      <section style="display: none;" class="form" id="transfer" class="bg-[#f4f5f7] h-[100vh]">
+      <section style="display: none;" class="form bg-[#f4f5f7] h-[100vh]" id="transfer" class="">
         <section class="max-w-lg mx-auto  p-3 ">
         <div>
             <h1 class="font-bold">Transfer Money</h1>
@@ -172,7 +172,7 @@
      </section>
 
      <!-- get bonus -->
-       <section style="display: none;" class="form" id="get"  class="bg-[#f4f5f7] h-[100vh]">
+       <section style="display: none;" class="form bg-[#f4f5f7] h-[100vh]" id="get"  class="">
         <section class="max-w-lg mx-auto  p-3 ">
         <div>
             <h1 class="font-bold">Get Bonus</h1>
@@ -193,6 +193,79 @@
 
 
      <!-- pay bill -->
+      <section style="display: none;" class="form h-[100vh]  bg-[#f4f5f7]" id="paybill" class="  ">
+        <section class="  max-w-lg mx-auto bg-white ">
+            <h1 class="font-bold text-[18px] ml-[12px]">Pay Bill</h1>
+
+
+            <!--pay fild field -->
+            <div class=" bg-white p-5">
+
+                <div class=" p-4  ">
+                <div>
+                <h1 class="font-bold text-[15px] text-[#080808b3]">Select To Pay</h1>
+                <select class="select">
+  <option disabled selected>Pick a color</option>
+  <option>Crimson</option>
+  <option>Amber</option>
+  <option>Velvet</option>
+</select>
+                
+            </div>
+            </div>
+
+
+            <div class=" p-4   ">
+                <div>
+                <h1 class="font-bold text-[15px] text-[#080808b3]">Biller Account Number</h1>
+                <input class="rounded-lg w-[320px]" placeholder="Biller Account Number" type="text">     
+            </div>
+            </div>
+
+
+            <div class=" p-4   ">
+                <div>
+                <h1 class="font-bold text-[15px] text-[#080808b3]">Amount to Pay</h1>
+                <input class="rounded-lg w-[320px]" placeholder="Amount to Pay" type="text">     
+            </div>
+            </div>
+
+
+            <div class=" p-4   ">
+                <div>
+                <h1 class="font-bold text-[15px] text-[#080808b3]">Pin Number</h1>
+                <input class="rounded-lg w-[320px]" placeholder="Pin Number" type="text">     
+            </div>
+            </div>
+            <button  class="btn btn-primary w-[320px] mt-3 ml-[13px] rounded-lg ">Pay Now</button>
+
+            
+
+            </div>
+
+
+
+        </section>
+
+      </section>
+
+
+      <!-- transaction -->
+
+      <section class="form h-[100vh] mt-5 bg-[#f4f5f7]" id="transaction" >
+
+        <section class=" h-[300px] max-w-lg mx-auto">
+
+            <div class="flex justify-between p-3">
+                <h1 class="font-bold">Transaction History</h1>
+                <p class="text-[#08080880]"> view all</p>
+            </div>
+
+            
+
+        </section>
+
+      </section>
       
       
 
